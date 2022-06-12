@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ChartComponent } from './chart/chart.component';
 import { GraficaRedondaComponent } from './grafica-redonda/grafica-redonda.component';
 import { BarraInversionComponent } from './barra-inversion/barra-inversion.component';
+import { MarcoPaginaPrincipalComponent } from './marco-pagina-principal/marco-pagina-principal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChartComponent,
     GraficaRedondaComponent,
-    BarraInversionComponent
+    BarraInversionComponent,
+    MarcoPaginaPrincipalComponent
   ],
   imports: [
     BrowserModule,
