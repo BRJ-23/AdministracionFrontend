@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { ChartComponent } from './chart/chart.component';
 import { GraficaRedondaComponent } from './grafica-redonda/grafica-redonda.component';
 import { BarraInversionComponent } from './barra-inversion/barra-inversion.component';
-import { MarcoPaginaPrincipalComponent } from './marco-pagina-principal/marco-pagina-principal.component';
+import { MarcoPaginaPrincipalComponent } from './frames/marco-pagina-principal/marco-pagina-principal.component';
+import { FramePrincipalComponent } from './frames/frame-principal/frame-principal.component';
+import { FrameMesComponent } from './frames/frame-mes/frame-mes.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { MarcoPaginaPrincipalComponent } from './marco-pagina-principal/marco-pa
     ChartComponent,
     GraficaRedondaComponent,
     BarraInversionComponent,
-    MarcoPaginaPrincipalComponent
+    MarcoPaginaPrincipalComponent,
+    FramePrincipalComponent,
+    FrameMesComponent
   ],
   imports: [
     BrowserModule,
