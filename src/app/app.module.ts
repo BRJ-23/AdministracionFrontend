@@ -28,7 +28,6 @@ import { BarraInversion5Component } from './graficas/barras-inversion/barra-inve
     BarraInversion3Component,
     BarraInversion4Component,
     BarraInversion5Component
-
   ],
   imports: [
     BrowserModule,

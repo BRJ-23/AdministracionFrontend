@@ -151,7 +151,9 @@ grafPrin.set("cursor", am5xy.XYCursor.new(root, {}));
 let legend = grafPrin.children.push(
   am5.Legend.new(root, {
     centerX: am5.p50,
-    x: am5.p50
+    x: am5.p50,
+    y: am5.p0,
+    centerY: am5.p0
   })
 );
 legend.data.setAll(grafPrin.series.values);
