@@ -40,8 +40,8 @@ let grafPrin = root.container.children.push(
   am5xy.XYChart.new(root, {
     panX: false,
     panY: false,
-    wheelX: "panX",
-    wheelY: "panX",
+    wheelX: "none",
+    wheelY: "none",
     layout: root.verticalLayout
   })
 );
@@ -49,53 +49,53 @@ let grafPrin = root.container.children.push(
 // Datos de la grafica
 let data = [
   {
-    mes: "Enero",
-    income: 23.5
+    mes: "En",
+    ahorro: 23.5 
   },
   {
-    mes: "Febrero",
-    income: 26.2
+    mes: "Febr",
+    ahorro: 26.2
 
   },
   {
-    mes: "Marzo",
-    income: 30.1,
+    mes: "Mzo",
+    ahorro: 30.1
   },
   {
-    mes: "Abril",
-    income: 29.5
+    mes: "Abr",
+    ahorro: 29.5
   },
   {
-    mes: "Mayo",
-    income: 30.6
+    mes: "My",
+    ahorro: 30.6
   },
   {
-    mes: "Junio",
-    income: 34.1
+    mes: "Jun",
+    ahorro: 34.1
   },
   {
-    mes: "Julio",
-    income: 44.1
+    mes: "Jul",
+    ahorro: 44.1
   },
   {
-    mes: "Agosto",
-    income: 14.1
+    mes: "Agt",
+    ahorro: 14.1
   },
   {
-    mes: "Septiembre",
-    income: -112.21
+    mes: "Sep",
+    ahorro: -112.21
   },
   {
-    mes: "Octubre",
-    income: 100.1
+    mes: "Oct",
+    ahorro: 100.1
   },
   {
-    mes: "Noviember",
-    income: 10
+    mes: "Nov",
+    ahorro: 10
   },
   {
-    mes: "Diciembre",
-    income: 12
+    mes: "Dic",
+    ahorro: 12
   }
 ];
 
@@ -127,11 +127,11 @@ let series1 = grafPrin.series.push(
     name: "Ahorros",
     xAxis: xAxis,
     yAxis: yAxis,
-    valueYField: "income",
+    valueYField: "ahorro",
     categoryXField: "mes",
     tooltip:am5.Tooltip.new(root, {
       pointerOrientation:"horizontal",
-      labelText:"{name} en {categoryX}: {valueY} {info}"
+      labelText:"{name} en {categoryX}: {valueY}€"
     })
   })
 );

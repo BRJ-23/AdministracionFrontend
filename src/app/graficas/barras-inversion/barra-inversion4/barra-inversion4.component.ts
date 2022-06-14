@@ -42,8 +42,8 @@ export class BarraInversion4Component {
       let chart = root.container.children.push(am5xy.XYChart.new(root, {
         panX: false,
         panY: false,
-        wheelX: "panX",
-        wheelY: "panX",
+        wheelX: "none",
+        wheelY: "none",
         layout: root.verticalLayout
       }));
       
