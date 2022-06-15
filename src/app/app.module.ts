@@ -20,6 +20,11 @@ import { GraficaInversionesComponent } from './graficas/graficas-redondas/grafic
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdministracionApiService } from './administracion-api.service';
+import { MostrarIngresosComponent } from './frames/frame-mes/mostrar-ingresos/mostrar-ingresos.component';
+import { MostrarGastosMesComponent } from './frames/frame-mes/mostrar-gastos-mes/mostrar-gastos-mes.component';
+import { MostrarGastosOcioComponent } from './frames/frame-mes/mostrar-gastos-ocio/mostrar-gastos-ocio.component';
+import { MostrarInversionesComponent } from './frames/frame-mes/mostrar-inversiones/mostrar-inversiones.component';
+import { MostrarAhorrosComponent } from './frames/frame-mes/mostrar-ahorros/mostrar-ahorros.component';
 
 
 
@@ -38,7 +43,12 @@ import { AdministracionApiService } from './administracion-api.service';
     BarraInversion5Component,
     GraficaGastosMensualesComponent,
     GraficaGastosPersonalesComponent,
-    GraficaInversionesComponent
+    GraficaInversionesComponent,
+    MostrarIngresosComponent,
+    MostrarGastosMesComponent,
+    MostrarGastosOcioComponent,
+    MostrarInversionesComponent,
+    MostrarAhorrosComponent
   ],
   imports: [
     BrowserModule,
