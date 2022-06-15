@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { AdministracionApiService } from 'src/app/administracion-api.service';
+
 
 @Component({
   selector: 'app-mostrar-inversiones',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MostrarInversionesComponent implements OnInit {
 
-  constructor() { }
+  movimientosList$!:Observable<any[]>;
+
+  constructor(private service:AdministracionApiService) { }
 
   ngOnInit(): void {
+    this.movimientosList$ = this.service.getMovimientosPorCategoriaList(4,1);
   }
 
 }

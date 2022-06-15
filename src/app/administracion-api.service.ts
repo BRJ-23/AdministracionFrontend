@@ -16,8 +16,8 @@ export class AdministracionApiService {
     return this.http.get<any>(this.administracionAPIUrl + '/Movimientos');
   }
 
-  getMovimientosPorCategoriaList(id:number):Observable<any[]> {
-    return this.http.get<any>(this.administracionAPIUrl + `/Categoria${id}`);
+  getMovimientosPorCategoriaList(id:number, mes:number):Observable<any[]> {
+    return this.http.get<any>(this.administracionAPIUrl + `/Categoria=${id}-${mes}`);
   }
 
   addMovimiento(data:any)  {

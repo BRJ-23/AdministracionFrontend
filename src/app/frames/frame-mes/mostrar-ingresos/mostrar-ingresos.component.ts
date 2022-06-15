@@ -14,7 +14,7 @@ export class MostrarIngresosComponent implements OnInit {
   constructor(private service:AdministracionApiService) { }
 
   ngOnInit(): void {
-    this.movimientosList$ = this.service.getMovimientosPorCategoriaList(3);
+    this.movimientosList$ = this.service.getMovimientosPorCategoriaList(1,1);
   }
 
 }

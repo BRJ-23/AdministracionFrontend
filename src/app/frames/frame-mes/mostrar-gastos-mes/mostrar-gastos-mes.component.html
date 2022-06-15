@@ -1,1 +1,13 @@
-<p>mostrar-gastos-mes works!</p>
+<table class="table table-striped">
+    <thead>
+        <th>Articulo</th>
+        <th>Importe</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of movimientosList$|async">
+            <td>{{item.nombre}}</td>
+            <td>{{item.valor}}</td>
+        </tr>
+    </tbody>
+</table>
+

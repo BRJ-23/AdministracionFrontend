@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { AdministracionApiService } from 'src/app/administracion-api.service';
+
 
 @Component({
   selector: 'app-mostrar-ahorros',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MostrarAhorrosComponent implements OnInit {
 
-  constructor() { }
+  movimientosList$!:Observable<any[]>;
+
+  constructor(private service:AdministracionApiService) { }
 
   ngOnInit(): void {
+    this.movimientosList$ = this.service.getMovimientosPorCategoriaList(5,1);
   }
 
 }
+
