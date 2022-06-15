@@ -12,12 +12,16 @@ export class AdministracionApiService {
   constructor(private http:HttpClient) { }
 
   // Movimientos 
-  getMovimientosList():Observable<any[]> {
+  getMovimientosList(data:any):Observable<any[]> {
     return this.http.get<any>(this.administracionAPIUrl + '/Movimientos');
   }
 
+  getMovimientosPorCategoriaList(id:number):Observable<any[]> {
+    return this.http.get<any>(this.administracionAPIUrl + `/Categoria${id}`);
+  }
+
   addMovimiento(data:any)  {
-    return this.http.post(this.administracionAPIUrl + 'Movimientos', data);
+    return this.http.post(this.administracionAPIUrl + '/Movimientos', data);
   }
 
   updateMovimiento(id:number|string, data:any) {
