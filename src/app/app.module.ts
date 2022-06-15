@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GraficaRedondaComponent } from './graficas/grafica-redonda/grafica-redonda.component';
+import { GraficaRedondaComponent } from './graficas/graficas-redondas/grafica-redonda/grafica-redonda.component';
 import { MarcoPaginaPrincipalComponent } from './frames/marco-pagina-principal/marco-pagina-principal.component';
 import { FramePrincipalComponent } from './frames/frame-principal/frame-principal.component';
 import { FrameMesComponent } from './frames/frame-mes/frame-mes.component';
@@ -13,6 +13,9 @@ import { BarraInversion2Component } from './graficas/barras-inversion/barra-inve
 import { BarraInversion3Component } from './graficas/barras-inversion/barra-inversion3/barra-inversion3.component';
 import { BarraInversion4Component } from './graficas/barras-inversion/barra-inversion4/barra-inversion4.component';
 import { BarraInversion5Component } from './graficas/barras-inversion/barra-inversion5/barra-inversion5.component';
+import { GraficaGastosMensualesComponent } from './graficas/graficas-redondas/grafica-gastos-mensuales/grafica-gastos-mensuales.component';
+import { GraficaGastosPersonalesComponent } from './graficas/graficas-redondas/grafica-gastos-personales/grafica-gastos-personales.component';
+import { GraficaInversionesComponent } from './graficas/graficas-redondas/grafica-inversiones/grafica-inversiones.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { BarraInversion5Component } from './graficas/barras-inversion/barra-inve
     BarraInversion2Component,
     BarraInversion3Component,
     BarraInversion4Component,
-    BarraInversion5Component
+    BarraInversion5Component,
+    GraficaGastosMensualesComponent,
+    GraficaGastosPersonalesComponent,
+    GraficaInversionesComponent
   ],
   imports: [
     BrowserModule,
