@@ -17,6 +17,11 @@ import { GraficaGastosMensualesComponent } from './graficas/graficas-redondas/gr
 import { GraficaGastosPersonalesComponent } from './graficas/graficas-redondas/grafica-gastos-personales/grafica-gastos-personales.component';
 import { GraficaInversionesComponent } from './graficas/graficas-redondas/grafica-inversiones/grafica-inversiones.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AdministracionApiService } from './administracion-api.service';
+
+
 
 @NgModule({
   declarations: [
@@ -37,9 +42,12 @@ import { GraficaInversionesComponent } from './graficas/graficas-redondas/grafic
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AdministracionApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
