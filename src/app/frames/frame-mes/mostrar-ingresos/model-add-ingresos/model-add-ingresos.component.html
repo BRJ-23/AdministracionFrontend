@@ -1,5 +1,3 @@
-<p>model-add-ingresos works!</p>
-
 <ng-template #content let-modal>
     <div class="modal-header">
       <h4 class="modal-title" id="modal-basic-title">Insertar ingreso</h4>
@@ -9,16 +7,16 @@
       <form>
         <div class="mb-3">
             <label for="nombreIngreso" class="form-label">Nombre ingreso</label>
-            <input type="text" class="form-control" name="nombreIngreso">
+            <input type="text" class="form-control" name="nombre"id="nombre">
         </div>
         <div class="mb-3">
             <label for="valorIngreso" class="form-label">Valor</label>
-            <input type="text" class="form-control" name="valorIngreso">
+            <input type="text" class="form-control" name="valor" id="valor">
           </div>
       </form>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Guardar</button>
+      <button type="button" class="btn btn-outline-dark" (click)="addIngreso()">Guardar</button>
     </div>
   </ng-template>
   
