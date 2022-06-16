@@ -25,7 +25,7 @@ import { MostrarGastosMesComponent } from './frames/frame-mes/mostrar-gastos-mes
 import { MostrarGastosOcioComponent } from './frames/frame-mes/mostrar-gastos-ocio/mostrar-gastos-ocio.component';
 import { MostrarInversionesComponent } from './frames/frame-mes/mostrar-inversiones/mostrar-inversiones.component';
 import { MostrarAhorrosComponent } from './frames/frame-mes/mostrar-ahorros/mostrar-ahorros.component';
-
+import { ModelAddIngresosComponent } from './frames/frame-mes/mostrar-ingresos/model-add-ingresos/model-add-ingresos.component';
 
 
 @NgModule({
@@ -48,7 +48,8 @@ import { MostrarAhorrosComponent } from './frames/frame-mes/mostrar-ahorros/most
     MostrarGastosMesComponent,
     MostrarGastosOcioComponent,
     MostrarInversionesComponent,
-    MostrarAhorrosComponent
+    MostrarAhorrosComponent,
+    ModelAddIngresosComponent
   ],
   imports: [
     BrowserModule,

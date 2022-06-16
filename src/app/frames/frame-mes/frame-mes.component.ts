@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class FrameMesComponent implements OnInit {
 
   constructor() { }
-
+  
   ngOnInit(): void {
+  
   }
-
 }
